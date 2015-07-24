@@ -48,4 +48,19 @@ Data Server消息接口.xmind
 
 兼容性说明：
 无
+******************************************************
+修改时间：2015/7/24
+修改人：周亚锋
+修改文件：
+数据库主机仓库表
 
+新增文件：
+无
+
+主要修改：
+1、主机仓库表增加检查时间字段：alter table cloud_host_warehouse add check_time varchar(6) default null;
+2、主机仓库表增加最小库存字段：alter table cloud_host_warehouse add minimum int(2) default 0;
+
+
+兼容性说明：
+无
