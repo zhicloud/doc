@@ -1,4 +1,25 @@
 ******************************************************
+修改时间：2015/9/1
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+
+新增文件：
+无
+
+主要修改：
+1、http_gateway：create_compute_pool/modify_compute_pool增加参数mode（一维无符号整型数组），表示[开启高可用,开启自动QoS调整]
+2、http_gateway：create_hostt接口增加path/crypt参数以支持ip san
+3、Control server：create_host接口增加path、crypt参数以支持ip san；
+4、Control server：create_host接口修改io参数描述：云主机最大iops,0代表不限制（默认为不限制）
+5、Control server：create_host接口修改option参数描述：0/1,[是否使用磁盘镜像创建,数据盘数量,是否自动启动，是否允许本地备份，是否支持扩展usb]
+6、Control server：create_host接口修改disk_volume参数描述：创建磁盘容量，单位：字节，[系统磁盘，数据盘1，数据盘2, ...]
+7、Control server：query_host_info接口修改network_type参数描述：网络地址类型，0=私有云，1=独享公网地址（ip），2=共享公网地址（端口）, 3 = 直连
+8、Control server：create_compute_pool接口修改mode参数描述：(默认值为全0)list of 0/1,[开启高可用, 开启自动QoS调整]
+9、Control server：modify_compute_pool接口修改mode参数描述：（默认为不修改）list of 0/1,[开启高可用, 开启自动QoS调整]
+
+******************************************************
 修改时间：2015/8/24
 修改人：黄睿
 修改文件：
