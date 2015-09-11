@@ -1,4 +1,22 @@
 ******************************************************
+修改时间：2015/9/11
+修改人：邓培华
+修改文件：
+interface/http gateway接口文档.docx
+interface/Control Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.cs查询云主机配置接口：增加io、priority返回参数
+2.nc云主机查询接口：增加io、priority返回参数
+3.nc云主机查询接口：network_type描述修改为“网络地址类型，0=私有云，1=独享公网地址（ip），2=共享公网地址（端口）, 3 = 直连”
+4.nc云主机查询接口：disk_type描述修改为"磁盘模式，0=本地磁盘，1=云存储，2=nas磁盘，3=ip san"
+5.gw create_host、modify_host、query_host_info接口：增加io以及priority参数
+6.cs querh_host_info接口：disk_type描述改为"磁盘模式，0=本地，1=云存储，2=nas磁盘，3=ip san"
+
+******************************************************
 修改时间：2015/9/9
 修改人：邓培华
 修改文件：
