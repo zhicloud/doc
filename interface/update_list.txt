@@ -1,4 +1,17 @@
 ******************************************************
+修改时间：2015/9/14
+修改人：程巍
+修改文件：
+interface/Storage Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.添加多磁盘支持，增加query_storage_device/add_storage_device/remove_storage_device/enable_storage_device/disable_storage_device/modify_service/config_changed 接口
+2.添加多磁盘支持, 修改query_iso_image/query_disk_image/upload_iso_image/create_disk_image/query_whisper 接口
+
+******************************************************
 修改时间：2015/9/11
 修改人：邓培华
 修改文件：
