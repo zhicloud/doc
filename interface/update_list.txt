@@ -1,3 +1,67 @@
+﻿******************************************************
+修改时间：2015/9/14
+修改人：刘力源
+修改文件：
+interface/Node Client消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+query_stroage_device接口
+add_storage_device接口
+remove_storage_device接口
+enable_storage_device接口
+disable_storage_device接口
+create_disk_image接口
+insert_media接口
+change_media接口
+
+******************************************************
+修改时间：2015/9/14
+修改人：程巍
+修改文件：
+interface/Storage Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.添加多磁盘支持，增加query_storage_device/add_storage_device/remove_storage_device/enable_storage_device/disable_storage_device/modify_service/config_changed 接口
+2.添加多磁盘支持, 修改query_iso_image/query_disk_image/upload_iso_image/create_disk_image/query_whisper 接口
+
+******************************************************
+修改时间：2015/9/11
+修改人：邓培华
+修改文件：
+interface/http gateway接口文档.docx
+interface/Control Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.cs查询云主机配置接口：增加io、priority返回参数
+2.nc云主机查询接口：增加io、priority返回参数
+3.nc云主机查询接口：network_type描述修改为“网络地址类型，0=私有云，1=独享公网地址（ip），2=共享公网地址（端口）, 3 = 直连”
+4.nc云主机查询接口：disk_type描述修改为"磁盘模式，0=本地磁盘，1=云存储，2=nas磁盘，3=ip san"
+5.gw create_host、modify_host、query_host_info接口：增加io以及priority参数
+6.cs querh_host_info接口：disk_type描述改为"磁盘模式，0=本地，1=云存储，2=nas磁盘，3=ip san"
+
+******************************************************
+修改时间：2015/9/9
+修改人：邓培华
+修改文件：
+interface/http gateway接口文档.docx
+interface/Control Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.control_server & http_gateway：query_host接口增加range/target参数。
+2.control_server & http_gateway：query_service接口增加返回server参数，表示服务所在服务器uuid
+
 ******************************************************
 修改时间：2015/9/2
 修改人：邓培华
