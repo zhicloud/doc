@@ -21,6 +21,20 @@ change_media接口
 修改人：邓培华
 修改文件：
 interface/Control Server消息接口.xmind
+interface/Intelligent Router消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1、cs修改get_forwarder接口
+2、ir修改add_forwarder接口
+
+******************************************************
+修改时间：2015/9/15
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
 interface/http gateway接口文档.docx
 design/platform/function/服务器设备管理及服务层剥离整体设计.xmind
 
