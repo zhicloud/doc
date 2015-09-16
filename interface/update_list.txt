@@ -1,4 +1,20 @@
 ﻿******************************************************
+修改时间：2015/9/15
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+design/platform/function/服务器设备管理及服务层剥离整体设计.xmind
+
+新增文件：
+无
+
+主要修改：
+1、cs/gw增加多磁盘相关接口query_storage_device、add_storage_device、remove_storage_device、enable_storage_device、disable_storage_device、modify_service、config_changed
+2、cs/gw计算资源池的创建、修改、查询详情接口增加path、crypt以表示共享存储/nas的信息。
+3、更新《服务器设备管理及服务层剥离整体设计》
+
+******************************************************
 修改时间：2015/9/14
 修改人：刘力源
 修改文件：
