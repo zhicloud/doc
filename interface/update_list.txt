@@ -1,4 +1,22 @@
 ﻿******************************************************
+修改时间：2015/9/16
+修改人：刘力源
+修改文件：
+interface/Node Client消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+query_stroage_device接口
+add_storage_device接口
+remove_storage_device接口
+enable_storage_device接口
+disable_storage_device接口
+create_disk_image接口
+insert_media接口
+change_media接口
+******************************************************
 修改时间：2015/9/15
 修改人：邓培华
 修改文件：
