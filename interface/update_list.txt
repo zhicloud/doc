@@ -1,4 +1,19 @@
 ﻿******************************************************
+修改时间：2015/9/21
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+
+新增文件：
+无
+
+主要修改：
+1.cs接口文档：服务器相关接口uuid参数数据类型 uint -> string
+2.gw接口文档：query_storage_device接口参数名称修改 status -> device_status
+3.cs接口文档：增加统计功能相关接口，query_service_detail、query_service_summary、query_operate_detail，query_operate_summary
+
+******************************************************
 修改时间：2015/9/16
 修改人：刘力源
 修改文件：
