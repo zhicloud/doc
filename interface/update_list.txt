@@ -1,4 +1,258 @@
+﻿﻿******************************************************
+修改时间：2015/11/04
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+
+主要修改：
+	1.gw、cs接口文档，query_disk_image接口增加返回参数file_type，表示磁盘镜像格式。
+
+﻿﻿﻿******************************************************
+修改时间：2015/11/03
+修改人：刘力源
+修改文件：
+interface/node_client消息接口.xmind
+
+主要修改:
+	1、修改flush_disk_image接口
+******************************************************
+修改时间：2015/10/29
+修改人：刘力源
+修改文件：
+interface/node_client消息接口.xmind
+
+主要修改:
+	1.修改视频格式接口兼容	
+	2.修改是否备份为是否预留备份接口
+
 ﻿******************************************************
+
+修改时间：2015/10/29
+修改人：陈鸿圳
+修改文件：
+	interface/Control Server消息接口.docx
+	interface/http gateway接口文档.docx
+
+主要修改：
+    cs:query_host_info返回的option参数增加视频类型表示(0=mjpeg/1=h264)
+    gw:同cs
+
+******************************************************
+修改时间：2015/10/28
+修改人：陈鸿圳
+修改文件：
+	interface/http gateway接口文档.docx
+
+主要修改：
+	修改create_host、modify_host接口，option参数增加视频类型(mjpeg/h264)表示
+
+******************************************************
+修改时间：2015/10/27
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+
+新增文件：
+无
+
+主要修改：
+1.云主机属性enable_local_backup意义由“是否允许备份”修改为“是否预留备份空间”
+2.gw文档修改接口描述：query_compute_pool_detail
+
+******************************************************
+修改时间：2015/10/21
+修改人：陈鸿圳
+修改文件：
+interface/Control Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+	1.修改create_host和modify_host接口的option参数，增加mjpeg/h264
+
+******************************************************
+修改时间：2015/10/20
+修改人：刘力源
+修改文件：
+interface/node_client消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.修改create_host接口,补充备份和usb参数
+
+******************************************************
+修改时间：2015/10/19
+修改人：刘力源
+修改文件：
+interface/node_client消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.修改create_host接口
+2.修改start_host接口
+3.修改restart_host接口
+4.修改共享存储相关接口
+
+******************************************************
+修改时间：2015/10/16
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.Control Server消息接口：upload_iso_image接口返回参数ip、port改为可选，仅在本地存储时才返回。
+
+******************************************************
+修改时间：2015/10/12
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+
+新增文件：
+无
+
+主要修改：
+1.http_gateway及cs接口文档：query_service接口增加disk_type返回参数，表示存储模式
+
+******************************************************
+修改时间：2015/10/10
+修改人：程巍
+修改文件：
+interface/Storage Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.修改ss query_disk_image/create_disk_image接口，增加file_type参数，增加对thin模式的支持
+
+******************************************************
+修改时间：2015/10/10
+修改人：王历
+修改文件：
+interface/Statistic Server与Control Server之间查询接口.xmind
+
+新增文件：
+Statistic Server与Control Server之间查询接口.xmind
+
+主要修改：
+1.重新整理统计服务器模块与CS之间的查询接口
+
+******************************************************
+修改时间：2015/10/9
+修改人：陈鸿圳
+修改文件：
+interface/Node Client消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+nc:修改attach_host接口，增加两个参数network_address、netmask表示vpc的网络地址的掩码
+
+******************************************************
+修改时间：2015/10/08
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+design/platform/function/服务器设备管理及服务层剥离整体设计.xmind
+
+新增文件：
+无
+
+主要修改：
+1.《服务器设备管理及服务层剥离整体设计》设计文档：修改上传光盘镜像接口，增加对共享存储支持
+2.《Control Server消息接口》：修改上传光盘镜像接口；修改计算资源池的创建、修改、详情以支持thin/backing；增加网卡聚集相关接口
+3.《http gateway接口文档》：修改上传光盘镜像接口；修改计算资源池的创建、修改、详情以支持thin/backing；增加网卡聚集相关接口；增加统计服务相关接口;增加迁移云主机接口;增加启用禁用服务接口；增加转发器相关接口；增加快照管理相关接口；
+
+******************************************************
+修改时间：2015/9/30
+修改人：程巍
+修改文件：
+interface/Storage Server消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1.新增ss消息接口query_service
+
+******************************************************
+修改时间：2015/9/21
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+
+新增文件：
+无
+
+主要修改：
+1.cs接口文档：服务器相关接口uuid参数数据类型 uint -> string
+2.gw接口文档：query_storage_device接口参数名称修改 status -> device_status
+3.cs接口文档：增加统计功能相关接口，query_service_detail、query_service_summary、query_operate_detail，query_operate_summary
+
+******************************************************
+修改时间：2015/9/16
+修改人：刘力源
+修改文件：
+interface/Node Client消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+query_stroage_device接口
+add_storage_device接口
+remove_storage_device接口
+enable_storage_device接口
+disable_storage_device接口
+create_disk_image接口
+insert_media接口
+change_media接口
+******************************************************
+修改时间：2015/9/15
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/Intelligent Router消息接口.xmind
+
+新增文件：
+无
+
+主要修改：
+1、cs修改get_forwarder接口
+2、ir修改add_forwarder接口
+
+******************************************************
+修改时间：2015/9/15
+修改人：邓培华
+修改文件：
+interface/Control Server消息接口.xmind
+interface/http gateway接口文档.docx
+design/platform/function/服务器设备管理及服务层剥离整体设计.xmind
+
+新增文件：
+无
+
+主要修改：
+1、cs/gw增加多磁盘相关接口query_storage_device、add_storage_device、remove_storage_device、enable_storage_device、disable_storage_device、modify_service、config_changed
+2、cs/gw计算资源池的创建、修改、查询详情接口增加path、crypt以表示共享存储/nas的信息。
+3、更新《服务器设备管理及服务层剥离整体设计》
+
+******************************************************
 修改时间：2015/9/14
 修改人：刘力源
 修改文件：
