@@ -1,6 +1,6 @@
 ﻿******************************************************
 修改时间：2015/12/15
-修改人：邓培华
+修改人：程巍
 修改文件：
 interface/Storage Server消息接口.xmind
 interface/http gateway接口文档.docx
