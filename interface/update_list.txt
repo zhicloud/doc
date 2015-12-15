@@ -1,4 +1,16 @@
 ﻿******************************************************
+修改时间：2015/12/15
+修改人：邓培华
+修改文件：
+interface/Storage Server消息接口.xmind
+interface/http gateway接口文档.docx
+
+主要修改：
+  1.增加ss/gw查询镜像服务接口：query_image_service
+  2.增加ss http可用性检测接口 GET /image_usage
+  3.增加ss http上传镜像接口 PUT /iso_image 和 PUT /disk_image
+
+******************************************************
 修改时间：2015/12/08
 修改人：邓培华
 修改文件：
