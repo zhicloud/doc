@@ -1,0 +1,71 @@
+os: Ubuntu 14.04.3 LTS
+gcc version 4.8.4
+root/zhi%#$2014CLoud578
+
+apt-get install update
+apt-get install gcc
+apt-get install libjpeg-dev
+apt-get install pkg-config
+apt-get install intltool
+apt-get install libusb-dev
+apt-get install libusb-1.0
+apt-get install libogg-dev
+apt-get install openssl
+apt-get install libssl-dev
+apt-get install gstreamer0.10-plugins-base gstreamer0.10-plugins-good gstreamer0.10-plugins-ugly gstreamer0.10-plugins-bad libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
+apt-get install libpixman-1*
+apt-get install libX11-dev
+apt-get install libpulse-dev
+apt-get install libgl1-mesa-dev libglu1-mesa-dev
+
+#yasm
+mkdir $BUILDDIR/yasm
+cd $BUILDDIR/yasm
+$SRCDIR/yasm-1.2.0/configure --prefix=/usr  --libdir=/usr/lib64
+make && make install
+
+#usbredir
+mkdir $BUILDDIR/usbredir
+cd $BUILDDIR/usbredir
+$SRCDIR/usbredir-0.7/configure --prefix=/usr --libdir=/usr/lib64 --includedir=/usr/include --exec_prefix=/usr/lib64
+make -j4
+make install
+
+#celt
+mkdir $BUILDDIR/celt
+cd $BUILDDIR/celt
+$SRCDIR/celt-0.5.1.3/configure --prefix=/usr  --libdir=/usr/lib64
+make -j4
+make install
+
+#cyrus
+mkdir $BUILDDIR/cyrus
+cd $BUILDDIR/cyrus
+$SRCDIR/cyrus-sasl-2.1.26/configure --prefix=/usr  --libdir=/usr/lib64
+make -j4
+make install
+
+#ffmpeg
+mkdir $BUILDDIR/ffmpeg
+cd $BUILDDIR/ffmpeg
+$SRCDIR/ffmpeg-2.7.1/configure --enable-decoder=h264 --enable-shared --enable-static --prefix=/usr  --libdir=/usr/lib64
+make -j4
+make install
+
+#spice-glib
+export PULSE=y
+make -j4
+make install
+
+#cloud_terminal
+./qt-opensource-linux-x64-5.5.1.run
+vim /etc/profile
+export PATH=/opt/Qt5.5.1/5.5/gcc_64/bin/:$PATH
+export LD_LIBRARY_PATH=/opt/Qt5.5.0/5.5/gcc_64/lib/
+qmake
+make -j4
+
+cloud_teminal.pro //修改该文件后需要重新执行qmake
+DEFINES += OS_X86 //控制ARM还是X86版本
+DEFINES += ZS //控制TC还是ZS版本
+DEFINES += XH //控制硬件厂家版本XH SD
