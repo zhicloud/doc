@@ -489,4 +489,17 @@ Data Server消息接口.xmind
 
 兼容性说明：
 无
+******************************************************
+修改时间：2016/5/20
+修改人：梁永波
+修改文件：
+interface/Node Client消息接口.xmind
+interface/Control Server消息接口.xmind
+interface/Http_gateway API.xmind
+新增文件：
+无
 
+主要修改：
+1、Node Client：增加create_host h264编码比特率以及帧率参数；
+2、Control Server：增加create_host h264编码比特率以及帧率参数；
+3、Http gateway：增加create_host h264编码比特率以及帧率参数；
